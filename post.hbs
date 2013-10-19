@@ -5,16 +5,6 @@
 
             {{! The comment above "< default" means - insert everything in this file into
             the {body} of the default.hbs template, which contains our header/footer. }}
-            <div class="span3">
-                <div id="sidebar">
-                    <div class="span3">
-                        {{#if @blog.logo}}<img src="{{@blog.logo}}" alt="Blog Logo" />{{/if}}
-                    </div>
-                    <a href="{{@blog.url}}"><h1 class="blog-title">{{@blog.title}}</h1></a>
-                    <h2 class="blog-description">{{@blog.description}}</h2>
-
-                </div>
-            </div>
             <div class="span9">
                 <article class="{{post_class}}">
                     {{! Everything inside the #post tags pulls data from the post }}
@@ -26,10 +16,11 @@
                         <a href="{{url}}"><h2 class="fg-color-white">{{{title}}}</h2></a>
                     </div>
                     <div class="bg-color-blueDark fg-color-white padding5">
-                        <span class="tertiary-text fg-color-white"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time> {{#if tags}}on {{tags separator=" | "}}{{/if}}</span>
                         {{#if author}}
-                        <a class="fg-color-yellow" href="">{{author.name}}</a>
+                       Author:&nbsp;<a class="fg-color-white" href="">{{author.name}}</a> ||
                         {{/if}}
+			 Tagged In: <span class="fg-color-white"> {{#if tags}} {{tags separator=", "}}{{/if}}</span>
+
                     </div>
                     <br>
                     <div class="article_content">
@@ -54,6 +45,8 @@
                     </footer>
                     {{/post}}
                 </article>
+		 <span class="tertiary-text fg-color-blue"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time>
+
             </div>
 
         </div>

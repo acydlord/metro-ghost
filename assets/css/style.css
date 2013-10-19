@@ -36,5 +36,15 @@ hr {
 }
 #sidebar{
    position: fixed;
-       width:200px;
+       width:250px;
+}
+.article_title .fg-color-white{
+			font-size: 2.5em;
+}
+
+.fg-color-yellow {
+			color: #FFF;
+}
+.post-title {
+		font-size: 1.5em;
 }
