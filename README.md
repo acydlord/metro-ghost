@@ -1,5 +1,3 @@
 metro-ghost
 ===========
-![Image](https://raw.github.com/zakaria340/metro-ghost/master/assets/screen/m1.jpg)
-![Image](https://raw.github.com/zakaria340/metro-ghost/master/assets/screen/m2.jpg)
-![Image](https://raw.github.com/zakaria340/metro-ghost/master/assets/screen/m3.jpg)
+My minimalist take on Zakaria's Metro Ghost Theme (https://github.com/zakaria340/metro-ghost)
